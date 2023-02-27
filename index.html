@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewPort" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT(09/02/2023)</title>
+
+    <!-- CSS -->
+    <style>
+        .box {
+            background-color: aquamarine;
+            height: 100vh;
+        }
+
+        .box h1 {
+            font-size: 60px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: 40px;
+            display: none;
+        }
+
+        @media screen and (min-width:0px)and (max-width:425px) {
+            .box {
+                background-color: crimson;
+
+            }
+
+            .p4 {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width:425px) and (max-width:768px){
+            .box {
+                background-color: aqua;
+
+            }
+            p4 {
+                display: none;
+            }
+
+            .p3 {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width:1024px){
+            .box {
+                background-color: darkgoldenrod;
+
+            }
+
+            .p1 {
+                display: none;
+            }
+
+            .p4 {
+                display: none;
+            }
+
+            .p3 {
+                display: none;
+            }
+
+            .p2 {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width:1024px) and (max-width:1440px) {
+            .box {
+                background-color: forestgreen;
+
+            }
+
+            .p4 {
+                display: none;
+            }
+
+            .p2 {
+                display: none;
+            }
+
+            .p3 {
+                display: none;
+            }
+
+            .p1 {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>This is a media query demo page</h1>
+        <p class="p1">Screen size: 1440px</p>
+        <p class="p2">Screen size: 1024px</p>
+        <p class="p3">Screen size: 768px</p>
+        <p class="p4">Screen size: 425px</p>
+    </div>
+</body>
+
+</html>
